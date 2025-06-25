@@ -4,7 +4,7 @@ const user = window.location.pathname.includes("eesa") ? "eesa" : "popov";
 // en ajoutant seulement cette ligne à la fin de chaque intervalle :
 
 function saveSession(activity, duration) {
-  fetch('https://starcitizen-backend.onrender.com/api/tracker', {
+  fetch('https://starcitizen-tracker.onrender.com/api/tracker', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ user, activity, duration })
